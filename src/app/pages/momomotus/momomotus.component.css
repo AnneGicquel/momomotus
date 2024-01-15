@@ -1,0 +1,54 @@
+.momomoMainTus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grid {
+    display: grid;
+    margin: 85px 0 65px 0;
+  }
+  
+  .grid-row {
+    display: flex;
+  }
+  
+  .grid-cell {
+    flex: 1;
+    height: 64px;
+    width: 64px;
+    border: 1px solid var(--white);
+    background-color: var(--blue);
+    color: var(--white); 
+    text-align: center; 
+    padding: 10px; 
+  }
+
+  .grid-cell.filled {
+    background-color: var(--red);
+  }
+  
+button{
+    color:var(--white);
+    border: solid;
+    border-radius: 50%;
+    line-height: 1.5;
+    cursor: pointer;
+    width: 72px; 
+    height: 72px;
+    text-align: center;
+    margin: 19.2px 17.2px 0 0;
+    font-size: 29px;
+}
+
+.specialButtons{
+    width: 165px;
+    border-radius: 84px; 
+    font-size: 19px;
+}
+
+.keyboard{
+    width: 933px;
+    margin-bottom: 94px;
+}

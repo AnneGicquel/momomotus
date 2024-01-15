@@ -1,3 +1,33 @@
+<!-- --------- HEADER --------- -->
 <app-header></app-header>
 
-<p class="gameName">MOMOMOTUS</p>
+
+<!-- --------- MOMOMOTUS --------- -->
+<main class="momomoMainTus">
+
+    <!-- --------- GRID --------- -->
+    <div class="grid">
+        <div class="grid-row" *ngFor="let row of grid">
+            <div class="grid-cell" *ngFor="let cell of row" [ngClass]="{'filled': cell !== ' '}">{{ cell }}</div>
+        </div>
+    </div>
+
+
+    <!-- --------- KEYBOARD --------- -->
+    <section class="keyboard">
+
+        <div class="row">
+            <button *ngFor="let letter of azertyRow" (click)="updateGrid(letter)">{{ letter }}</button>
+        </div>
+
+        <div class="row">
+            <button *ngFor="let letter of qsdfghjklmRow" (click)="updateGrid(letter)">{{ letter }}</button>
+        </div>
+
+        <div class="row">
+            <button *ngFor="let letter of wxcvbnRow" (click)="updateGrid(letter)">{{ letter }}</button>
+            <button class="specialButtons" *ngFor="let btn of specialButtons" >{{ btn }}</button>
+        </div>
+        
+    </section>
+</main>
