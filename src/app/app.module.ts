@@ -10,6 +10,7 @@ import { RulesComponent } from './components/rules/rules.component';
 import { MomomotusComponent } from './pages/momomotus/momomotus.component';
 import { FillFirstNameComponent } from './pages/fill-first-name/fill-first-name.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    [MatDialogModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

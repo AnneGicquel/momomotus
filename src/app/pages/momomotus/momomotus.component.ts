@@ -30,6 +30,7 @@ export class MomomotusComponent {
   specialButtons: string[] = ['SUPPRIMER', 'VALIDER'];
 
 
+  // a fixer !!!
   updateGrid(letter: string) {
     console.log('Lettre cliquée :', letter);
     for (let i = 0; i < this.grid.length; i++) {

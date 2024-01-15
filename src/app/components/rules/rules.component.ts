@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./rules.component.css']
 })
 export class RulesComponent {
+  modalOpen: boolean = false;
 
+  openModal(): void {
+    this.modalOpen = true;
+  }
+
+  closeModal(): void {
+    this.modalOpen = false;
+  }
 }

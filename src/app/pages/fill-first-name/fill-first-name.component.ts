@@ -11,9 +11,9 @@ import { FirstNameService } from 'src/app/services/first-name.service';
 export class FillFirstNameComponent implements OnInit {
 
   firstNameForm!: FormGroup;
-  firstName: string = '';  // Initialiser à une chaîne vide
+  firstName: string = '';  
 
-  // Utiliser une propriété pour éviter d'appeler plusieurs fois la fonction
+  
   get firstNameLabel(): string {
     return this.firstNameService.getFirstNameInfo() || "Your First Name";
   }
@@ -22,7 +22,7 @@ export class FillFirstNameComponent implements OnInit {
 
   ngOnInit() {
     this.firstNameForm = this.formBuilder.group({
-      firstName: ['']  // Ajouter une valeur initiale au formulaire (chaîne vide dans ce cas)
+      firstName: ['']  
     });
   }
 
