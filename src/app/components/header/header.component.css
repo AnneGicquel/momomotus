@@ -21,9 +21,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* gap: 70px; */
     border-bottom: var(--white) solid 1px;
-    width: 100%;
-  
+    width: 100%;  
 }
 
