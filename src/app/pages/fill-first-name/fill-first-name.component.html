@@ -1,1 +1,27 @@
-<p>fill-first-name works!</p>
+<main class="mainTableNumberForm">
+
+    <section class="momomoTitleSection">
+        <p class="gameName">MOMOMOTUS</p>
+        <p class="emoji">🟥 🟡 🟦</p>
+    </section>
+
+
+    <p class="instruction">Pour commencer, quel est ton prénom ?</p>
+    <!-- lier le formulaire firstNameForm à la balise form / lier le ts au html-->
+<form [formGroup]="firstNameForm">
+     <!-- for pour lier le label à l'input -->
+    <label for="firstName" class="instruction"></label>
+    <div class="inputFieldButton">
+      <!-- Lier la valeur de l'input au modèle avec [(ngModel)] -->
+      <input type="text" class="entry-field" formControlName="firstName" [(ngModel)]="firstName">
+      <button type="button" (click)="accessToMomomotus()">Let’s go !</button>
+    </div>
+  </form>
+
+</main>
+
+
+
+
+
+  

@@ -9,6 +9,8 @@ import { WrongAnswerComponent } from './components/wrong-answer/wrong-answer.com
 import { RulesComponent } from './components/rules/rules.component';
 import { MomomotusComponent } from './pages/momomotus/momomotus.component';
 import { FillFirstNameComponent } from './pages/fill-first-name/fill-first-name.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { FillFirstNameComponent } from './pages/fill-first-name/fill-first-name.
     RulesComponent,
     MomomotusComponent,
     FillFirstNameComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
