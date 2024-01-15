@@ -1,0 +1,29 @@
+p{
+    color: var(--white);
+    font-family: var(--sofiaSans);
+}
+
+.gameName{
+    font-weight: 1000;
+    font-size: clamp(25px, 3vw, 42px);
+}
+
+.userName{
+    font-weight: normal;
+    font-size: 20px;    
+
+}
+
+header {
+    top:0;
+    height: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 70px; */
+    border-bottom: var(--white) solid 1px;
+    width: 100%;
+  
+}
+
